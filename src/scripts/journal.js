@@ -1,15 +1,4 @@
+import API from './data.js';
+import journalEntries from './entriesDOM.js';
 
-
-
-//render function
-// const renderJournalEntries = () => {
-//     fetchJournalAPI()
-// }
- 
-
-
-// fetch API and create HTML
-
-
-// Invoke the render function
 API.getJournalEntries().then(journalEntries.render);

@@ -21,3 +21,5 @@ const parsedEntries = {
             `
     }
 }
+
+export default parsedEntries;
