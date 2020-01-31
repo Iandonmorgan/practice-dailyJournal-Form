@@ -8,11 +8,18 @@
             "mood": "excited"
         },
         {
-            "id": 2,
+            "id": 1,
             "date": "01/17/2020",
             "title": "Functions in JavaScript",
             "contents": "Today we learned about the reusable code that are functions. Pure functions are consistent and will return the same value regardless of the number of times they are called. Impure functions produce different results each time they are called.",
             "mood": "happy"
+        },
+        {
+            "id": 2,
+            "date": "01/17/2020",
+            "title": "Objects, Methods, and an intro to 'this'",
+            "contents": "We dug deeper into the concepts behind Object Oriented Programming, today. We learned about functions inside of objects, which we refer to as methods. To refer to a property from within the same object, we use the 'this' keyword.",
+            "mood": "challenged"
         },
         {
             "id": 3,
@@ -23,13 +30,6 @@
         },
         {
             "id": 4,
-            "date": "01/17/2020",
-            "title": "Objects, Methods, and an intro to 'this'",
-            "contents": "We dug deeper into the concepts behind Object Oriented Programming, today. We learned about functions inside of objects, which we refer to as methods. To refer to a property from within the same object, we use the 'this' keyword.",
-            "mood": "challenged"
-        },
-        {
-            "id": 5,
             "date": "01/21/2020",
             "title": "JSON",
             "contents": "We started into JSON, but I was puking my guts out in the bathroom. I audibly prayed to God to get home, for resting / running to the bathroom a few times per hour, for a few hours. Plugged in late to read, but already know I'm gonna be lost. Will need to study this more into the end of the week. Need to read Chapters 9 and 10.",
