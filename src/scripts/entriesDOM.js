@@ -1,3 +1,5 @@
+import parsedEntries from './entryComponent.js';
+
 /* 
 Code that is responsible for modifying the DOM.
 */
@@ -13,3 +15,5 @@ const journalEntries = {
         entryLog.innerHTML += journalHTML;
     }
 }
+
+export default journalEntries;
