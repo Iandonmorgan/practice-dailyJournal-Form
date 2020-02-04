@@ -41,34 +41,6 @@
       "contents": "As part of the 'Daily Journal 7' exercise, we are implementing the learned process of POSTing an object to a remote JSON file that is running on a JSON server. If this post shows up, it is because I have successfully completed parts of the 'Daily Journal 7' exercise.",
       "mood": "happy",
       "id": 5
-    },
-    {
-      "date": "",
-      "title": "",
-      "contents": "",
-      "mood": "happy",
-      "id": 6
-    },
-    {
-      "date": "",
-      "title": "",
-      "contents": "",
-      "mood": "excited",
-      "id": 7
-    },
-    {
-      "date": "2020-01-31",
-      "title": "aa",
-      "contents": "aaa",
-      "mood": "moodSelect",
-      "id": 8
-    },
-    {
-      "date": "2020-01-31",
-      "title": "aa",
-      "contents": "aa",
-      "mood": "moodSelect",
-      "id": 9
     }
   ]
 }
