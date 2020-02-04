@@ -11,7 +11,7 @@
 
 <body>
     <h1>Daily Journal</h1>
-    <form action="">
+    <div id="journalForm">
             <fieldset class="date">
                 <label for="journalDate">Date of entry</label>
                 <input type="date" name="journalDate" id="journalDate">
@@ -26,7 +26,8 @@
             </fieldset>
             <fieldset class="mood">
                 <label for="journalOption">Mood for the day</label>
-                <select>
+                <select id="journalMood">
+                    <option value="moodSelect">-- select mood --</option>
                     <option value="happy">Happy</option>
                     <option value="sad">Sad</option>
                     <option value="overwhelmed">Overwhelmed</option>
@@ -35,8 +36,8 @@
                     <option value="excited">Excited</option>
                 </select>
             </fieldset>
-            <input type="submit" value="Record Journal Entry">
-    </form>
+            <input type="submit" id="journalEntrySubmitBtn" value="Record Journal Entry">
+    </div>
     <hr>
     <article class="entryLog">
 
