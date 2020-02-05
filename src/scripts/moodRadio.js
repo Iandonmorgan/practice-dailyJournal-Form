@@ -15,7 +15,7 @@ const moodRadio = {
     },
     moodFilter(event) {
         if (event.target.id !== "moodRadioButtons" && event.target.id !== "" && event.target.id.split("--")[1] !== "ALL") {
-            console.log(event.target.id.split("--")[1]);
+            // console.log(event.target.id.split("--")[1]);
             let filteredEntries = "";
             API.getJournalEntries()
             .then(entries => {

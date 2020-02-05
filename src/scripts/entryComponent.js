@@ -17,6 +17,7 @@ const parsedEntries = {
             </div>
             ${journal("div", entry.contents, "journalEntryContents")}
             </div>
+            <button id="deleteEntry--${entry.id}" class="deleteBtn">Delete</button>
             <hr>
             `
     }

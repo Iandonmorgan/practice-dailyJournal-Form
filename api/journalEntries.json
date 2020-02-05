@@ -8,21 +8,14 @@
       "mood": "excited"
     },
     {
-      "id": 1,
       "date": "2020-01-17",
       "title": "Functions in JavaScript",
       "contents": "Today we learned about the reusable code that are functions. Pure functions are consistent and will return the same value regardless of the number of times they are called. Impure functions produce different results each time they are called.",
-      "mood": "happy"
+      "mood": "happy",
+      "id": 1
     },
     {
       "id": 2,
-      "date": "2020-01-17",
-      "title": "Objects, Methods, and an intro to 'this'",
-      "contents": "We dug deeper into the concepts behind Object Oriented Programming, today. We learned about functions inside of objects, which we refer to as methods. To refer to a property from within the same object, we use the 'this' keyword.",
-      "mood": "challenged"
-    },
-    {
-      "id": 3,
       "date": "2020-01-17",
       "title": "Objects, Methods, and an intro to 'this'",
       "contents": "We dug deeper into the concepts behind Object Oriented Programming, today. We learned about functions inside of objects, which we refer to as methods. To refer to a property from within the same object, we use the 'this' keyword.",
@@ -41,48 +34,6 @@
       "contents": "As part of the 'Daily Journal 7' exercise, we are implementing the learned process of POSTing an object to a remote JSON file that is running on a JSON server. If this post shows up, it is because I have successfully completed parts of the 'Daily Journal 7' exercise.",
       "mood": "happy",
       "id": 5
-    },
-    {
-      "date": "2020-02-05",
-      "title": "DELETE",
-      "contents": "Soon I'll be deleting journal entries. This will be one to delete.",
-      "mood": "challenged",
-      "id": 6
-    },
-    {
-      "date": "2020-02-05",
-      "title": "DELETE ME, TOO!",
-      "contents": "howdy, delete me someday.",
-      "mood": "confused",
-      "id": 7
-    },
-    {
-      "date": "2020-02-05",
-      "title": "DELETE me three",
-      "contents": "deletew;alkshg;lsnbl kn;lkn",
-      "mood": "overwhelmed",
-      "id": 8
-    },
-    {
-      "date": "2020-02-05",
-      "title": "DELETE me four",
-      "contents": "ag;oaing;alnlk ",
-      "mood": "happy",
-      "id": 9
-    },
-    {
-      "date": "2020-02-05",
-      "title": "DELETE me five",
-      "contents": "howdy!!",
-      "mood": "excited",
-      "id": 10
-    },
-    {
-      "date": "2020-01-15",
-      "title": "DELETE SIX!",
-      "contents": "howdy!! ;alkjd g;algh ;agila hg;li",
-      "mood": "confused",
-      "id": 11
     }
   ]
 }

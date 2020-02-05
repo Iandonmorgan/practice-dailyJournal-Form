@@ -9,7 +9,7 @@ const API = {
         return fetch(journalApiUrl).then(entries => entries.json());
     },
     saveJournalEntry(entry) {
-        console.log(entry);
+        // console.log(entry);
         return fetch("http://localhost:3000/journalEntries", {
             method: "POST",
             headers: {
@@ -17,6 +17,11 @@ const API = {
             },
             body: JSON.stringify(entry)
         })
+    },
+    deleteJournalEntry(entry){
+        return fetch(`${journalApiUrl}/${entry}`, {
+            method: "DELETE"
+        });
     }
 }
 

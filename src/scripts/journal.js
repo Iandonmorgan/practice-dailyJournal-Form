@@ -1,6 +1,7 @@
 import API from './data.js';
 import journalEntries from './entriesDOM.js';
 import moodRadio from './moodRadio.js'
+import entryDelete from './deleteEntries.js';
 
 const button = document.getElementById("journalEntrySubmitBtn");
 
@@ -35,3 +36,4 @@ button.addEventListener("click", captureInputData);
 
 moodRadio.moodRadioFactory();
 moodRadio.moodRadioListener();
+entryDelete.eventListener();
