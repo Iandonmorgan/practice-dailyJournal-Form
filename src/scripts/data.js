@@ -10,7 +10,7 @@ const API = {
     },
     saveJournalEntry(entry) {
         console.log(entry);
-        fetch("http://localhost:3000/journalEntries", {
+        return fetch("http://localhost:3000/journalEntries", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

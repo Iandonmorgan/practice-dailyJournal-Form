@@ -14,3 +14,15 @@ fieldset {
     margin-bottom: 5px;
     width: 80%;
 }
+
+#moodRadioButtons {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.moodRadioBtn {
+    display:flex;
+    flex-direction:row;
+    margin:3px;
+}

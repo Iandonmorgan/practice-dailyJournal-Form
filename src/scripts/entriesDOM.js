@@ -9,6 +9,7 @@ const entryLog = document.querySelector(".entryLog");
 const journalEntries = {
     render(entries) {
         let journalHTML = "";
+        entryLog.innerHTML = "";
         entries.forEach(entry => {
             journalHTML += parsedEntries.createJournalEntryHTML(entry);
         })

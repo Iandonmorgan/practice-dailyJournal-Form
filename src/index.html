@@ -13,19 +13,19 @@
     <h1>Daily Journal</h1>
     <div id="journalForm">
             <fieldset class="date">
-                <label for="journalDate">Date of entry</label>
+                <legend>Date of entry</legend>
                 <input type="date" name="journalDate" id="journalDate">
             </fieldset>
             <fieldset class="concepts">
-                <label for="journalConcepts">Concepts covered</label>
+                <legend>Concepts covered</legend>
                 <input type="text" name="journalConcepts" id="journalConcepts">
             </fieldset>
             <fieldset class="entry">
-                <label for="journalEntry">Journal Entry</label>
+                <legend>Journal Entry</legend>
                 <textarea name="journalEntry" id="journalEntry" cols="60" rows="5"></textarea>
             </fieldset>
             <fieldset class="mood">
-                <label for="journalOption">Mood for the day</label>
+                <legend>Mood for the day</legend>
                 <select id="journalMood">
                     <option value="moodSelect">-- select mood --</option>
                     <option value="happy">Happy</option>
@@ -34,10 +34,14 @@
                     <option value="confused">Confused</option>
                     <option value="challenged">Challenged</option>
                     <option value="excited">Excited</option>
+                    <option value="meh">Meh</option>
                 </select>
             </fieldset>
             <input type="submit" id="journalEntrySubmitBtn" value="Record Journal Entry">
     </div>
+    <hr>
+    <fieldset id="moodRadio">
+    </fieldset>
     <hr>
     <article class="entryLog">
 
