@@ -41,6 +41,48 @@
       "contents": "As part of the 'Daily Journal 7' exercise, we are implementing the learned process of POSTing an object to a remote JSON file that is running on a JSON server. If this post shows up, it is because I have successfully completed parts of the 'Daily Journal 7' exercise.",
       "mood": "happy",
       "id": 5
+    },
+    {
+      "date": "2020-02-05",
+      "title": "DELETE",
+      "contents": "Soon I'll be deleting journal entries. This will be one to delete.",
+      "mood": "challenged",
+      "id": 6
+    },
+    {
+      "date": "2020-02-05",
+      "title": "DELETE ME, TOO!",
+      "contents": "howdy, delete me someday.",
+      "mood": "confused",
+      "id": 7
+    },
+    {
+      "date": "2020-02-05",
+      "title": "DELETE me three",
+      "contents": "deletew;alkshg;lsnbl kn;lkn",
+      "mood": "overwhelmed",
+      "id": 8
+    },
+    {
+      "date": "2020-02-05",
+      "title": "DELETE me four",
+      "contents": "ag;oaing;alnlk ",
+      "mood": "happy",
+      "id": 9
+    },
+    {
+      "date": "2020-02-05",
+      "title": "DELETE me five",
+      "contents": "howdy!!",
+      "mood": "excited",
+      "id": 10
+    },
+    {
+      "date": "2020-01-15",
+      "title": "DELETE SIX!",
+      "contents": "howdy!! ;alkjd g;algh ;agila hg;li",
+      "mood": "confused",
+      "id": 11
     }
   ]
 }

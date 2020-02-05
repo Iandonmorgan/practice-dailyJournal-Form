@@ -1,5 +1,6 @@
 import API from './data.js';
 import journalEntries from './entriesDOM.js';
+import moodRadio from './moodRadio.js'
 
 const button = document.getElementById("journalEntrySubmitBtn");
 
@@ -20,7 +21,9 @@ const captureInputData = () => {
     const newJournalEntry = journalEntry(dateField.value, conceptsField.value, entryField.value, moodField.value);
 
     if (newJournalEntry.date !== "" && newJournalEntry.title !== "" && newJournalEntry.contents !== "" && newJournalEntry.mood !== "moodSelect") {
-        API.saveJournalEntry(newJournalEntry);
+        API.saveJournalEntry(newJournalEntry)
+        .then(API.getJournalEntries)
+        .then((journalEntries.render));
     } else {
         window.alert("Please complete all fields in the form prior to submitting.");
     }
@@ -29,3 +32,6 @@ const captureInputData = () => {
 API.getJournalEntries().then(journalEntries.render);
 
 button.addEventListener("click", captureInputData);
+
+moodRadio.moodRadioFactory();
+moodRadio.moodRadioListener();
