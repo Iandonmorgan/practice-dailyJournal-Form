@@ -12,6 +12,7 @@
 <body>
     <h1>Daily Journal</h1>
     <div id="journalForm">
+            <input type="hidden" id="entryId" value="" />
             <fieldset class="date">
                 <legend>Date of entry</legend>
                 <input type="date" name="journalDate" id="journalDate">
@@ -22,7 +23,7 @@
             </fieldset>
             <fieldset class="entry">
                 <legend>Journal Entry</legend>
-                <textarea name="journalEntry" id="journalEntry" cols="60" rows="5"></textarea>
+                <textarea name="journalEntry" id="journalEntry" cols="48" rows="5"></textarea>
             </fieldset>
             <fieldset class="mood">
                 <legend>Mood for the day</legend>

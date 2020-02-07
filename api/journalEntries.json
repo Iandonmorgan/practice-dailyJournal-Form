@@ -34,6 +34,13 @@
       "contents": "As part of the 'Daily Journal 7' exercise, we are implementing the learned process of POSTing an object to a remote JSON file that is running on a JSON server. If this post shows up, it is because I have successfully completed parts of the 'Daily Journal 7' exercise.",
       "mood": "happy",
       "id": 5
+    },
+    {
+      "id": 6,
+      "date": "2020-02-07",
+      "title": "EDIT JSON data",
+      "contents": "My \"Daily Journal\" is growing stronger. Having learned how to fetch and PUT information into a JSON file, I am now able to edit my journal entries. I'm excited to be able to read through my code with a better understanding, feeling great today. I might need to add a more energetic mood later and update this entry accordingly.",
+      "mood": "excited"
     }
   ]
 }

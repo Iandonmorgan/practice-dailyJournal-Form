@@ -9,10 +9,14 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    margin-left: 5%;
+    width: 90%;
+}
+
 fieldset {
     border-radius: 10px;
     margin-bottom: 5px;
-    width: 80%;
 }
 
 #moodRadioButtons {
