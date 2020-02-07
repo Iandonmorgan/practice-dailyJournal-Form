@@ -1,11 +1,12 @@
 import API from './data.js';
 import journalEntries from './entriesDOM.js';
 import moodRadio from './moodRadio.js'
-import entryDelete from './deleteEntries.js';
+import entryMutate from './mutateEntries.js';
 
-const button = document.getElementById("journalEntrySubmitBtn");
+const recordButton = document.getElementById("journalEntrySubmitBtn");
 
-const journalEntry = (date, concepts, entry, mood) => ({
+const journalEntry = (id, date, concepts, entry, mood) => ({
+            "id": id,
             "date": date,
             "title": concepts,
             "contents": entry,
@@ -18,13 +19,19 @@ const captureInputData = () => {
     const conceptsField = document.getElementById("journalConcepts");
     const entryField = document.getElementById("journalEntry");
     const moodField = document.getElementById("journalMood");
+    const idField = document.getElementById("entryId");
     
-    const newJournalEntry = journalEntry(dateField.value, conceptsField.value, entryField.value, moodField.value);
-
-    if (newJournalEntry.date !== "" && newJournalEntry.title !== "" && newJournalEntry.contents !== "" && newJournalEntry.mood !== "moodSelect") {
-        API.saveJournalEntry(newJournalEntry)
+    const journalEntryData = journalEntry(parseInt(idField.value), dateField.value, conceptsField.value, entryField.value, moodField.value);
+    if (journalEntryData.date !== "" && journalEntryData.title !== "" && journalEntryData.contents !== "" && journalEntryData.mood !== "moodSelect") {
+        if (event.target.id === "journalEntrySubmitBtn") {
+        API.saveJournalEntry(journalEntryData)
         .then(API.getJournalEntries)
         .then((journalEntries.render));
+        } else if (event.target.id === "journalEntryUpdateBtn") {
+            API.updateJournalEntry(journalEntryData)
+            .then(API.getJournalEntries)
+            .then((journalEntries.render));
+        }
     } else {
         window.alert("Please complete all fields in the form prior to submitting.");
     }
@@ -32,8 +39,8 @@ const captureInputData = () => {
 
 API.getJournalEntries().then(journalEntries.render);
 
-button.addEventListener("click", captureInputData);
+recordButton.addEventListener("click", captureInputData);
 
 moodRadio.moodRadioFactory();
 moodRadio.moodRadioListener();
-entryDelete.eventListener();
+entryMutate.eventListener();
