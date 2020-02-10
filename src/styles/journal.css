@@ -9,6 +9,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+    color: lightblue;
+}
+
 body {
     margin-left: 5%;
     width: 90%;
@@ -19,7 +23,20 @@ fieldset {
     margin-bottom: 5px;
 }
 
-#moodRadioButtons {
+#moodRadio, #searchBar {
+    width: 40%;
+}
+
+#journalEntrySubmitBtn, #journalEntryUpdateBtn {
+    width: 80%;
+    font-size: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+#moodRadioButtons, #filterSets {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -29,4 +46,9 @@ fieldset {
     display:flex;
     flex-direction:row;
     margin:3px;
+}
+
+.deleteBtn, .editBtn {
+    background-color: lightblue;
+    border-radius: 5px;
 }

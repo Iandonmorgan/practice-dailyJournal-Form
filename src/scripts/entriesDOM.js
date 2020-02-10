@@ -14,6 +14,7 @@ const journalEntries = {
             journalHTML += parsedEntries.createJournalEntryHTML(entry);
         })
         entryLog.innerHTML += journalHTML;
+        parsedEntries.clearJournalForm();
     }
 }
 

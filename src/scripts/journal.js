@@ -1,6 +1,6 @@
 import API from './data.js';
 import journalEntries from './entriesDOM.js';
-import moodRadio from './moodRadio.js'
+import filterElements from './filterElements.js'
 import entryMutate from './mutateEntries.js';
 
 const recordButton = document.getElementById("journalEntrySubmitBtn");
@@ -41,6 +41,6 @@ API.getJournalEntries().then(journalEntries.render);
 
 recordButton.addEventListener("click", captureInputData);
 
-moodRadio.moodRadioFactory();
-moodRadio.moodRadioListener();
+filterElements.moodRadioFactory();
+filterElements.searchBarFactory();
 entryMutate.eventListener();

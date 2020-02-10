@@ -1,6 +1,6 @@
 import API from './data.js';
 import journalEntries from './entriesDOM.js';
-import moodRadio from './moodRadio.js';
+import filterElements from './filterElements.js';
 
 const journalEntriesBtnListener = document.querySelector(".entryLog")
 
@@ -13,8 +13,8 @@ const entryMutate = {
                     .then(API.getJournalEntries)
                     .then(entries => {
                         journalEntries.render(entries);
-                        moodRadio.moodRadioFactory();
-                        moodRadio.moodRadioListener();
+                        filterElements.moodRadioFactory();
+                        filterElements.moodRadioListener();
                         /* this is a good starting place when you're trying to insert
                         code that will keep filter active if entry is deleted from
                         filtered results. Look for the radio button that is checked
