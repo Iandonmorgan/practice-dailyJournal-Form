@@ -12,42 +12,46 @@
 <body>
     <h1>Daily Journal</h1>
     <div id="journalForm">
-            <input type="hidden" id="entryId" value="" />
-            <fieldset class="date">
-                <legend>Date of entry</legend>
-                <input type="date" name="journalDate" id="journalDate">
-            </fieldset>
-            <fieldset class="concepts">
-                <legend>Concepts covered</legend>
-                <input type="text" name="journalConcepts" id="journalConcepts">
-            </fieldset>
-            <fieldset class="entry">
-                <legend>Journal Entry</legend>
-                <textarea name="journalEntry" id="journalEntry" cols="48" rows="5"></textarea>
-            </fieldset>
-            <fieldset class="mood">
-                <legend>Mood for the day</legend>
-                <select id="journalMood">
-                    <option value="moodSelect">-- select mood --</option>
-                    <option value="happy">Happy</option>
-                    <option value="sad">Sad</option>
-                    <option value="overwhelmed">Overwhelmed</option>
-                    <option value="confused">Confused</option>
-                    <option value="challenged">Challenged</option>
-                    <option value="excited">Excited</option>
-                    <option value="meh">Meh</option>
-                </select>
-            </fieldset>
-            <input type="submit" id="journalEntrySubmitBtn" value="Record Journal Entry">
+        <input type="hidden" id="entryId" value="" />
+        <fieldset class="date">
+            <legend>Date of entry</legend>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset class="concepts">
+            <legend>Concepts covered</legend>
+            <input type="text" name="journalConcepts" id="journalConcepts">
+        </fieldset>
+        <fieldset class="entry">
+            <legend>Journal Entry</legend>
+            <textarea name="journalEntry" id="journalEntry" cols="48" rows="5"></textarea>
+        </fieldset>
+        <fieldset class="mood">
+            <legend>Mood for the day</legend>
+            <select id="journalMood">
+                <option value="moodSelect">-- select mood --</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="overwhelmed">Overwhelmed</option>
+                <option value="confused">Confused</option>
+                <option value="challenged">Challenged</option>
+                <option value="excited">Excited</option>
+                <option value="meh">Meh</option>
+            </select>
+        </fieldset>
+        <input type="submit" id="journalEntrySubmitBtn" value="Record Journal Entry">
     </div>
     <hr>
-    <fieldset id="moodRadio">
-    </fieldset>
+    <div id="filterSets">
+        <fieldset id="moodRadio">
+        </fieldset>
+        <fieldset id="searchBar">
+        </fieldset>
+    </div>
     <hr>
     <article class="entryLog">
 
     </article>
-    <script type="module" src="./scripts/journal.js"></script>   
+    <script type="module" src="./scripts/journal.js"></script>
 </body>
 
 </html>

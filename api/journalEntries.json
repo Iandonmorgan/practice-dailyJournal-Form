@@ -41,6 +41,13 @@
       "title": "EDIT JSON data",
       "contents": "My \"Daily Journal\" is growing stronger. Having learned how to fetch and PUT information into a JSON file, I am now able to edit my journal entries. I'm excited to be able to read through my code with a better understanding, feeling great today. I might need to add a more energetic mood later and update this entry accordingly.",
       "mood": "excited"
+    },
+    {
+      "id": 7,
+      "date": "2020-02-10",
+      "title": "Object Methods",
+      "contents": "Today's lecture was on Object Methods, including, \"Object.values()\", \"Object.keys()\", \"Object.entries()\" and covered \"For...of\" loops to iterate through objects. Everything made sense and I worked through all of the practice exercises. I am completely caught up with the practices, and feeling good about my understanding. It is now time to seek out some challenges I haven't worked through, yet.",
+      "mood": "excited"
     }
   ]
 }
