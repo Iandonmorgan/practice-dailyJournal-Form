@@ -21,6 +21,13 @@ const parsedEntries = {
             <button id="deleteEntry--${entry.id}" class="deleteBtn">Delete Entry</button>
             <hr>
             `
+    },
+    clearJournalForm() {
+        document.getElementById("journalDate").value = "";
+        document.getElementById("journalConcepts").value = "";
+        document.getElementById("journalEntry").value = "";
+        document.getElementById("journalMood").value = "moodSelect";
+        document.getElementById("entryId").value = "";
     }
 }
 
