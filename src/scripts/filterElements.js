@@ -7,8 +7,8 @@ const filterElements = {
         const moodRadioID = document.getElementById("moodRadio");
         let moodRadioHTML = `<legend>Filter by mood</legend><div id="moodRadioButtons">
         <div class="moodRadioBtn"><input type="radio" id="radioID--ALL" name="moodRadio" value="ALL"><label for="radioID--ALL">All moods</label></div>`;
-        for (let i = 1; i < journalMood.length; i++) {
-            moodRadioHTML += `<div class="moodRadioBtn"><input type="radio" id="radioID--${journalMood[i].value}" name="moodRadio" value="${journalMood[i].value}"><label for="radioID--${journalMood[i].value}">${journalMood[i].value.toUpperCase().charAt(0)}${journalMood[i].value.substring(1)}</label></div>`;
+        for (let i = 0; i < journalMood.length; i++) {
+            moodRadioHTML += `<div class="moodRadioBtn"><input type="radio" id="radioID--${journalMood[i].value}" name="moodRadio" value="${journalMood[i].value}">${journalMood[i].label}</div>`;
         }
         moodRadioHTML += `</div>`;
         moodRadioID.innerHTML = moodRadioHTML;
@@ -19,12 +19,11 @@ const filterElements = {
             let filteredEntries = "";
             API.getJournalEntries()
                 .then(entries => {
-                    filteredEntries = entries.filter(entries => entries.mood === event.target.id.split("--")[1]);
+                    filteredEntries = entries.filter(entries => entries.moodId === parseInt(event.target.id.split("--")[1]));
                     journalEntries.render(filteredEntries);
                     filterElements.searchBarFactory();
                 });
         } else if (event.target.id.split("--")[1] === "ALL") {
-            let filteredEntries = "";
             API.getJournalEntries().then(entries => journalEntries.render(entries));
             filterElements.searchBarFactory();
         }

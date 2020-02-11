@@ -22,7 +22,7 @@ const entryMutate = {
                         */
                     });
             } else if (event.target.id.startsWith("editEntry--")) {
-                const entryTargetId = event.target.id.split("--")[1];
+                const entryTargetId = parseInt(event.target.id.split("--")[1]);
                 API.editJournalEntry(entryTargetId).then(entry => {
                     const entryID = document.getElementById("entryId");
                     const entryDate = document.getElementById("journalDate");
@@ -33,7 +33,7 @@ const entryMutate = {
                     entryDate.value = entry.date;
                     entryConcepts.value = entry.title;
                     entryJournalEntry.value = entry.contents;
-                    entryMood.value = entry.mood;
+                    entryMood.value = entry.moodId;
                     if (document.getElementById("journalEntrySubmitBtn") !== null) {
                         document.getElementById("journalEntrySubmitBtn").value = "Update Journal Entry";
                         document.getElementById("journalEntrySubmitBtn").id = "journalEntryUpdateBtn";

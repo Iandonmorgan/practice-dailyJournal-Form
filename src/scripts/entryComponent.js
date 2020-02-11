@@ -13,7 +13,7 @@ const parsedEntries = {
             ${journal("h1", entry.title, "journalEntrytitle")}
             <div class="date-mood">
             ${journal("p", entry.date, "journalEntryDate date-mood-item")}
-            ${journal("p", entry.mood, "journalEntryMood date-mood-item")}
+            ${journal("p", entry.mood.label, "journalEntryMood date-mood-item")}
             </div>
             ${journal("div", entry.contents, "journalEntryContents")}
             </div>
@@ -26,7 +26,7 @@ const parsedEntries = {
         document.getElementById("journalDate").value = "";
         document.getElementById("journalConcepts").value = "";
         document.getElementById("journalEntry").value = "";
-        document.getElementById("journalMood").value = "moodSelect";
+        document.getElementById("journalMood").value = "";
         document.getElementById("entryId").value = "";
     }
 }
