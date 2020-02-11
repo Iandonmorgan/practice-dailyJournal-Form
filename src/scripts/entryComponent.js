@@ -22,6 +22,11 @@ const parsedEntries = {
             <hr>
             `
     },
+    createMoodHTML(entry) {
+        return `
+            <option value="${entry.id}" label="${entry.label}"></option>
+            `
+    },
     clearJournalForm() {
         document.getElementById("journalDate").value = "";
         document.getElementById("journalConcepts").value = "";
