@@ -6,7 +6,7 @@ const journalApiUrl = "http://localhost:3000/journalEntries";
 
 const API = {
     getJournalEntries() {
-        return fetch(journalApiUrl).then(entries => entries.json());
+        return fetch(journalApiUrl + "?_expand=mood").then(entries => entries.json());
     },
     saveJournalEntry(entry) {
         return fetch(journalApiUrl, {

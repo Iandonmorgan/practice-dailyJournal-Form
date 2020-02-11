@@ -10,7 +10,7 @@ const journalEntry = (id, date, concepts, entry, mood) => ({
             "date": date,
             "title": concepts,
             "contents": entry,
-            "mood": mood
+            "moodId": mood
         })
 
 
@@ -21,7 +21,7 @@ const captureInputData = () => {
     const moodField = document.getElementById("journalMood");
     const idField = document.getElementById("entryId");
     
-    const journalEntryData = journalEntry(parseInt(idField.value), dateField.value, conceptsField.value, entryField.value, moodField.value);
+    const journalEntryData = journalEntry(parseInt(idField.value), dateField.value, conceptsField.value, entryField.value, parseInt(moodField.value));
     if (journalEntryData.date !== "" && journalEntryData.title !== "" && journalEntryData.contents !== "" && journalEntryData.mood !== "moodSelect") {
         if (event.target.id === "journalEntrySubmitBtn") {
         API.saveJournalEntry(journalEntryData)

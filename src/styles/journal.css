@@ -1,8 +1,3 @@
-label {
-    display:flex;
-    flex-direction:column;
-}
-
 body {
     background-color: black;
     color: white;
@@ -40,6 +35,7 @@ fieldset {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    justify-content:space-around;
 }
 
 .moodRadioBtn {
