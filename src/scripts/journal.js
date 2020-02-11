@@ -37,10 +37,10 @@ const captureInputData = () => {
     }
 }
 
+API.getMoods().then(journalEntries.renderMoods).then(filterElements.moodRadioFactory);
 API.getJournalEntries().then(journalEntries.render);
 
 recordButton.addEventListener("click", captureInputData);
 
-filterElements.moodRadioFactory();
 filterElements.searchBarFactory();
 entryMutate.eventListener();

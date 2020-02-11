@@ -3,8 +3,12 @@ Code that deals with getting the data.
 */
 
 const journalApiUrl = "http://localhost:3000/journalEntries";
+const moodApiUrl = "http://localhost:3000/moods";
 
 const API = {
+    getMoods() {
+        return fetch(moodApiUrl).then(entries => entries.json());
+    },
     getJournalEntries() {
         return fetch(journalApiUrl + "?_expand=mood").then(entries => entries.json());
     },
